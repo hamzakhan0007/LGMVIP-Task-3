@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/be1c87c3f5.js" crossorigin="anonymous"></script>
+    <!--Style CSS File-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Enrollment Form</title>
+</head>
+
+<body>
+    <!--Nav Bar For Navigation-->
+    <nav>
+        <h1 class="heading">Student Enrollment Form</h1>
+    </nav>
+    <!--Form for getting Student Details-->
+    <form class="enrollment-form">
+        <fieldset>
+            <legend>Enrollment Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-input" placeholder="Enter Your Email">
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" class="form-input" placeholder="Enter Your Website Link">
+
+            <label for="imglink">Image link:</label>
+            <input type="url" id="imglink" class="form-input" placeholder="Enter Your Image Link">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" class="form-radio">Male
+            <input type="radio" name="gender" id="female" class="form-radio">Female
+            <br>
+            <br>
+
+            <label>Skills:</label>
+            <input type="checkbox" name="skills" id="html" class="form-checkbox">HTML
+            <input type="checkbox" name="skills" id="css" class="form-checkbox">CSS
+            <input type="checkbox" name="skills" id="js" class="form-checkbox">JavaScript
+            <br>
+            <br>
+
+            <button type="submit" class="form-button">Enroll student</button>
+            <button type="reset" class="form-button">Reset</button>
+        </fieldset>
+    </form>
+
+    <div id="Enrolled-students" class="container2">
+        <h2><u>Enrolled Students</u></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <!--JavaScript File-->
+    <script src="script.js"></script>
+</body>
+
+</html>
